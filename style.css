@@ -1,0 +1,157 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Very-Light-Gray);
+  background: linear-gradient(135deg, orange 60%, cyan);
+
+}
+h1 {
+  max-width: 540px;
+  margin: 50px auto 0;
+  font-weight: 200;
+  color: var(--Very-Dark-Blue);
+  border: 2px solid Tomato;
+}
+h1 span {
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+#mainp {
+  max-width: 540px;
+  margin: 20px auto 30px;
+  color: var(--Grayish-Blue);
+}
+
+.cards div {
+  max-width: 100%;
+  min-height: fit;
+  margin: 0 auto 15px;
+  font-size: 15px;
+  background-color: rgb(223, 236, 236);
+  opacity: 1;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  border-style: outset;
+  border-color: red green blue yellow;
+  box-shadow: 0px 0px 30px -10px var(--Very-Dark-Blue);
+  float: left;
+}
+.cards h2 {
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+
+  grid-template-columns: auto auto auto auto
+}
+
+@media(max-width: 50%) {
+.cards {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+#card5 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+ #card1 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+ #card2 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+ #card3 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+ #card4 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+
+ #card1 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+ #card2 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+ #card3 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+ #card4 {
+  grid-column: 1/2;
+  grid-row: 1;
+ }
+}
+div.cards {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 50%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #008080;
+}
+
+.button:hover {background-color: #9c1717}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.header{
+  background: #D8BFD8 ;
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
+}
+.header h1{
+  font-family: "Oswald";
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 40px;
+  padding: 10px;
+}
+
